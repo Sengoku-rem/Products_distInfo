@@ -1,0 +1,13 @@
+{
+    "name": "products_server",
+    "version": "1.0.0",
+    "description": "Node.js on Docker with Express",
+    "author": "ne211085",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "express": "^4.17.3"
+    }
+  }

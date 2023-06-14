@@ -1,0 +1,18 @@
+version: '3.5'
+
+services:
+  app:
+    build: .
+    container_name: products_server
+    working_dir: /usr/src/app
+    environment:
+      TZ: "Asia/Tokyo"
+    ports:
+      - 8081:8080
+    volumes:
+      - .:/usr/src/app
+      - app:/usr/src/app/node_modules
+    command: npm start
+
+volumes:
+  app:
